@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { IoFastFoodOutline } from 'react-icons/io5';
 import { FiShoppingCart, FiLogIn } from 'react-icons/fi';
-import { faUser } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { motion } from "framer-motion";
 
 
@@ -22,7 +22,7 @@ const Header = ({ isAuthenticated = false }) => {
         </Link>
 
         <Link to={isAuthenticated ? '/me' : './login'}>
-          {isAuthenticated ? <faUser /> : <FiLogIn />}
+          {isAuthenticated ? <FaUser /> : <FiLogIn />}
         </Link>
 
       </div>
