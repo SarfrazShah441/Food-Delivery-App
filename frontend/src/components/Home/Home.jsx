@@ -1,6 +1,7 @@
 import React from 'react'
 import Founder from './Founder'
 import { motion } from 'framer-motion'
+import Menu from './Menu';
 
 
 const Home = () => {
@@ -45,6 +46,7 @@ const Home = () => {
       </section>
 
       <Founder />
+      <Menu />
     </>
 
   )
