@@ -1,5 +1,5 @@
 import React from 'react'
-import me from '../../assets/founder.JPG'
+import me from '../../assets/founder.jpeg'
 import { motion } from 'framer-motion'
 
 const Founder = () => {
@@ -8,7 +8,7 @@ const Founder = () => {
             x: '-100%',
             opacity: 0,
         },
-        WhileInView: {
+        whileInView: {
             x: 0,
             opacity: 1
         }
@@ -16,7 +16,7 @@ const Founder = () => {
   return (
       <section className='founder'>
         <motion.div {...options}>
-              <img src={me} alt="" />
+              <img src={me} alt="Founder" height={200} width={200} />
               <h3>Sarfraz Shah</h3>
 
               <p>

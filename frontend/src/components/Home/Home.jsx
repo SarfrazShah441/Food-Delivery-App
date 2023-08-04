@@ -28,12 +28,25 @@ const Home = () => {
           }}>Flavors That Inspire - Unforgettable Experiences</motion.p>
         </div>
 
-        <a href="#menu">Explore Menu</a>
+        <motion.a
+          href="#menu"
+          initial={{
+            y: "-100%",
+            opacity: 0,
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.4,
+          }}
+        >Explore Menu</motion.a>
       </section>
-      
+
       <Founder />
     </>
-   
+
   )
 }
 
