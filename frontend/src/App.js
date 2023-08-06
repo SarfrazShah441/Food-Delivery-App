@@ -6,9 +6,13 @@ import './styles/home.scss'
 import './styles/founder.scss'
 import './styles/menu.scss'
 import './styles/footer.scss'
+import './styles/contact.scss'
+import './styles/cart.scss'
 import Header from './components/Layout/Header'
 import Home from './components/Home/Home'
 import Footer from './components/Layout/Footer'
+import Contact from './components/contact/Contact'
+import Cart from './components/cart/Cart'
 
 
 const App = () => {
@@ -18,6 +22,8 @@ const App = () => {
       {/* routes go here */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </Router>
