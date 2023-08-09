@@ -10,6 +10,7 @@ import './styles/contact.scss'
 import './styles/cart.scss'
 import './styles/shipping.scss'
 import './styles/confirmOrder.scss'
+import './styles/paymentsuccess.scss'
 import Header from './components/Layout/Header'
 import Home from './components/Home/Home'
 import Footer from './components/Layout/Footer'
@@ -17,6 +18,7 @@ import Contact from './components/contact/Contact'
 import Cart from './components/cart/Cart'
 import Shipping from './components/cart/Shipping'
 import ConfirmOrder from './components/cart/ConfirmOrder'
+import PaymentSuccess from './components/cart/PaymentSuccess'
 const App = () => {
   return (
     <Router>
@@ -28,6 +30,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/confirmorder" element={<ConfirmOrder />} />
+        <Route path="/paymentsuccess" element={<PaymentSuccess />} />
       </Routes>
       <Footer />
     </Router>
