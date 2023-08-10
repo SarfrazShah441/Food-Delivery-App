@@ -26,7 +26,7 @@ import Profile from './components/profile/Profile'
 const App = () => {
   return (
     <Router>
-      <Header />
+      <Header isAuthenticated={true} />
       {/* routes go here */}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -36,7 +36,7 @@ const App = () => {
         <Route path="/confirmorder" element={<ConfirmOrder />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/me" element={<Profile />} />
       </Routes>
       <Footer />
     </Router>
